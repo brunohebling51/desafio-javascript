@@ -54,7 +54,7 @@ function formatTime(date) {
 
 async function main() {
     navigator.geolocation.getCurrentPosition(async function (position) {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=c3df25cb8ec0260863cc173d3e6aa169`).then(response => { return response.json() });
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=c3df25cb8ec0260863cc173d3e6aa169`).then(response => { return response.json() });
 
         const date = new Date();
         const timerData = response;
