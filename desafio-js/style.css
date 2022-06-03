@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #3b3b3b transparent;
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b;
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+
+/* body,
+h1,
+h2,
+h3,
+img,
+div {
+  border: 1px solid black;
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  width: 100%;
+  display: flex;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 32px;
+  border-radius: 25px;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+#container:hover {
+  -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 32px;
+  border-radius: 25px;
+  margin: 10px;
+  transition: all 0.3s;
+}
+.item:hover {
+  -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+}
+
+#hours-and-icon {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+
+#loading {
+  border: 6px solid #e5e5e5;
+  border-top-color: #51d4db;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  animation: is-rotating 1s infinite;
+  zoom: 2;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+#description {
+  text-transform: capitalize;
+  font-size: 30px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+#temp {
+  font-size: 70px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#week-day {
+  text-decoration: none;
+  text-transform: none;
+  font-size: 35px;
+  text-align: center;
+}
+
+#horario {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+#icon {
+  zoom: 2;
+}
+
+#buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px 30px;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#button-save {
+  display: none;
+  margin-top: 45px;
+}
